@@ -2,21 +2,36 @@
 
 ## Current Checkpoint
 
-`CLIENTDELIVERYKIT-009-GITHUB-PUBLIC-REPO-FIRST-COMMIT-COMPLETE`
+`CLIENTDELIVERYKIT-010-GITHUB-LIVE-SHOWCASE-VERIFICATION-AND-AGENTHUB-PUBLISHED-STATUS-SYNC-COMPLETE`
 
 ## Stage Summary
 
-ClientDeliveryKitAgent now has a public GitHub repository target, a first
-public-safe commit boundary, and a release surface ready for remote showcase
-verification.
+ClientDeliveryKitAgent now has a verified public GitHub showcase, a live
+public-safe screenshot surface, and an AgentHub published-spoke sync target.
 
 GitHub repository:
 `https://github.com/CHENXJC/ClientDeliveryKitAgent`
 
-This stage authorizes git initialization, precise staging, first public-safe
-commit, remote setup, and push to `origin/main`. It still excludes generated
-full reports, private outputs, credentials, real client data, and real
-connectors.
+The live repository remains synthetic demo-only. Generated full reports,
+private outputs, credentials, real client data, and real connectors are still
+excluded from the public showcase boundary.
+
+## Completed In CLIENTDELIVERYKIT-010
+
+- Verified the public GitHub repository is `PUBLIC` with default branch `main`.
+- Verified the GitHub repository page, raw README, `PROJECT_STATUS.md`, and key
+  public showcase docs return HTTP 200.
+- Verified the three README preview screenshots and all 8/8 `docs/images/*.png`
+  screenshots return HTTP 200 as `image/png`.
+- Verified remote tree safety: no `.env`, credential, token, secret, private
+  output, cache, `.venv`, or generated full report files are tracked.
+- Confirmed `outputs/public_reports/` tracks only `.gitkeep`.
+- Confirmed README contains the AgentHubControlCenter management backlink
+  wording.
+- Reviewed repo About/topics and recorded portfolio placement decision:
+  `recommend pin`.
+- Prepared AgentHubControlCenter published-spoke metadata sync for the
+  ClientDeliveryKitAgent portfolio row.
 
 ## Completed In CLIENTDELIVERYKIT-009
 
@@ -107,6 +122,8 @@ connectors.
 - Public showcase prep documentation
 - GitHub repo readiness decision
 - GitHub public repo creation decision
+- Live GitHub showcase verification
+- Portfolio placement decision
 - First public commit manifest
 - Public exclusion manifest
 - Release readiness report
@@ -121,7 +138,7 @@ connectors.
 | Agent ID | `client_delivery_kit_agent` |
 | Manifest status | Valid local manifest |
 | Dashboard URL | `http://localhost:8535` |
-| GitHub status | Public repo first commit complete |
+| GitHub status | Public live showcase verified |
 | Public-safe status | Synthetic demo-only |
 
 ## Public Showcase Prep Result
@@ -135,7 +152,23 @@ connectors.
 | Showcase asset checklist | `docs/SHOWCASE_ASSET_CHECKLIST.md` |
 | GitHub repo decision | `ready_for_repo_creation` |
 | Generated report tracking | Keep `outputs/public_reports/*` ignored; include compact docs summary |
-| Future repo status | Ready for live showcase verification and portfolio placement review |
+| Future repo status | Live public showcase verified; ready for AgentHub published-spoke sync |
+
+## Live Showcase Verification Result
+
+| Check | Result |
+| --- | --- |
+| Repository visibility | Public |
+| Default branch | `main` |
+| GitHub repository page | HTTP 200 |
+| Raw README | HTTP 200 |
+| Raw key docs | HTTP 200 |
+| README preview images | 3/3 HTTP 200 `image/png` |
+| Screenshot inventory | 8/8 HTTP 200 `image/png` |
+| Remote tree safety | Passed; unsafe tracked paths = 0 |
+| `outputs/public_reports/` remote tracking | `.gitkeep` only |
+| AgentHub backlink wording | Present in README |
+| Repo topics | Present and portfolio-relevant |
 
 ## Safety Status
 
@@ -148,7 +181,10 @@ connectors.
 - No real client workflow was run.
 - No real customer data was processed.
 - Git repository was initialized only after validation passed.
-- First public-safe commit and push were performed for this explicit stage.
+- First public-safe commit and push were performed for the explicit
+  CLIENTDELIVERYKIT-009 stage.
+- CLIENTDELIVERYKIT-010 remains docs/status verification only until its own
+  explicit docs commit.
 - No force push was performed.
 - No file was written to `outputs/private/`.
 - Generated full reports under `outputs/public_reports/` were not staged.
@@ -170,16 +206,17 @@ Validation completed for this checkpoint:
 | Policy check | Passed; unsafe execution modes, real connectors, real actions, private output writes, upload fields, and credential input fields = 0 |
 | Git status check | Passed before initialization; git initialized only after validation |
 | First public commit boundary | Passed; staged file set excludes generated reports, private outputs, caches, and credentials |
+| Live GitHub showcase verification | Passed; repo, raw README, key docs, README images, and 8/8 screenshots are HTTP 200 |
+| Remote tree safety | Passed; unsafe tracked paths = 0 and `outputs/public_reports/` contains only `.gitkeep` |
 
 ## Next Recommended Stage
 
-`CLIENTDELIVERYKIT-010-GITHUB-LIVE-SHOWCASE-VERIFICATION-AND-PORTFOLIO-PLACEMENT-REVIEW`
+`CLIENTDELIVERYKIT-011-PROFILE-PIN-OR-MAINTAIN-SHOWCASE-DECISION`
 
 Recommended scope:
 
-- Verify live GitHub README rendering and screenshot paths.
-- Confirm remote tree does not contain `.env`, private outputs, caches,
-  generated full reports, or credentials.
-- Review repo About / topics and portfolio placement.
-- Decide whether this project should be linked back from AgentHubControlCenter
-  and whether it deserves profile-pin consideration.
+- If profile pin slots are available, consider pinning ClientDeliveryKitAgent as
+  the client-facing consulting delivery spoke.
+- If pin slots are limited, keep AgentHubControlCenter as the primary hub pin
+  and maintain ClientDeliveryKitAgent as a linked public spoke.
+- Do not expand features until the showcase placement decision is settled.

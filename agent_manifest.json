@@ -4,9 +4,9 @@
   "category": "client_delivery",
   "description": "Client-facing AI automation delivery kit for converting demo intake, workflow pain points, and automation opportunities into structured consulting deliverables.",
   "project_path": "F:\\AIProjects\\ClientDeliveryKitAgent",
-  "status": "github_public_repo_first_commit_complete",
-  "version": "0.9.0-github-public-first-commit",
-  "manifest_version": "CLIENTDELIVERYKIT-009",
+  "status": "github_live_showcase_verified",
+  "version": "0.10.0-live-showcase-verified",
+  "manifest_version": "CLIENTDELIVERYKIT-010",
   "inputs": [
     "synthetic_client_intake_json",
     "synthetic_business_context_json",
@@ -267,7 +267,7 @@
   "demo_mode": true,
   "safe_mode": true,
   "last_run": null,
-  "next_recommended_action": "CLIENTDELIVERYKIT-010-GITHUB-LIVE-SHOWCASE-VERIFICATION-AND-PORTFOLIO-PLACEMENT-REVIEW",
+  "next_recommended_action": "CLIENTDELIVERYKIT-011-PROFILE-PIN-OR-MAINTAIN-SHOWCASE-DECISION",
   "github_repo": "https://github.com/CHENXJC/ClientDeliveryKitAgent",
   "dashboard_url": "http://localhost:8535",
   "tags": [
@@ -285,11 +285,13 @@
     "showcase-screenshots-complete",
     "ready-for-repo-creation",
     "github-public-repo",
-    "first-public-commit"
+    "first-public-commit",
+    "live-showcase-verified",
+    "recommend-pin"
   ],
   "owner": "BPCT",
-  "public_showcase_status": "public_repo_first_commit_complete",
-  "pin_status": "not_applicable",
+  "public_showcase_status": "live_showcase_verified",
+  "pin_status": "recommend_pin",
   "agenthub_integration": {
     "scan_ready": true,
     "useful_signals_ready": "implemented_demo",

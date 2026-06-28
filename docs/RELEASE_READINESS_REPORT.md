@@ -1,19 +1,18 @@
 # Release Readiness Report
 
 Checkpoint:
-`CLIENTDELIVERYKIT-009-GITHUB-PUBLIC-REPO-FIRST-COMMIT-COMPLETE`
+`CLIENTDELIVERYKIT-010-GITHUB-LIVE-SHOWCASE-VERIFICATION-AND-AGENTHUB-PUBLISHED-STATUS-SYNC-COMPLETE`
 
 ## Readiness Conclusion
 
-Release readiness: `public_repo_first_commit_complete`
+Release readiness: `live_showcase_verified`
 
-ClientDeliveryKitAgent has completed the explicit public repo first commit
-stage. The public GitHub repository target is
+ClientDeliveryKitAgent has completed live GitHub showcase verification. The
+public GitHub repository is
 `https://github.com/CHENXJC/ClientDeliveryKitAgent`.
 
-The next readiness focus is live GitHub showcase verification: README
-rendering, screenshot asset URLs, remote tree safety, repo topics, and portfolio
-placement review.
+The next readiness focus is AgentHub published-spoke status sync and optional
+profile pin placement.
 
 ## Current Readiness
 
@@ -29,12 +28,14 @@ placement review.
 | Output tracking | Ready | Generated full reports stay ignored by default. |
 | Git state | Initialized | Git was initialized only in the explicit CLIENTDELIVERYKIT-009 stage. |
 | Public safety | Passed | Public-safe scan and policy check passed. |
+| Live GitHub showcase | Passed | Repo, raw README, key docs, README images, and 8/8 screenshots return HTTP 200. |
+| Remote tree safety | Passed | Unsafe tracked paths = 0; `outputs/public_reports/` contains only `.gitkeep`. |
 
 ## Public Release Recommendation
 
-Do not keep this project local long-term. It fills a useful portfolio gap as a
-client-facing delivery asset. First public commit is complete; next verify the
-live GitHub showcase and decide portfolio placement.
+ClientDeliveryKitAgent should be maintained as a public portfolio spoke. It
+fills a useful client-facing delivery gap and has enough live evidence for a
+`recommend pin` decision if a profile pin slot is available.
 
 ## Required Final Checks Before First Commit
 
@@ -80,6 +81,21 @@ live GitHub showcase and decide portfolio placement.
 | GitHub repository | Created at `https://github.com/CHENXJC/ClientDeliveryKitAgent`. |
 | Push target | `origin/main`. |
 
+## CLIENTDELIVERYKIT-010 Validation Evidence
+
+| Check | Result |
+| --- | --- |
+| Repository visibility | Passed; repository is public. |
+| Default branch | Passed; `main`. |
+| Live repository page | Passed; HTTP 200. |
+| Raw README and key docs | Passed; HTTP 200. |
+| README preview images | Passed; 3/3 HTTP 200 `image/png`. |
+| Screenshot inventory | Passed; 8/8 HTTP 200 `image/png`. |
+| Remote tree safety | Passed; unsafe tracked paths = 0. |
+| Generated full report tracking | Passed; `outputs/public_reports/` tracks `.gitkeep` only. |
+| AgentHub backlink wording | Passed; live README contains AgentHubControlCenter management wording. |
+| Portfolio placement | Complete; decision is `recommend pin`. |
+
 ## Next Stage
 
-`CLIENTDELIVERYKIT-010-GITHUB-LIVE-SHOWCASE-VERIFICATION-AND-PORTFOLIO-PLACEMENT-REVIEW`
+`CLIENTDELIVERYKIT-011-PROFILE-PIN-OR-MAINTAIN-SHOWCASE-DECISION`

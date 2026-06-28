@@ -1,7 +1,7 @@
 # Showcase Asset Checklist
 
 Checkpoint:
-`CLIENTDELIVERYKIT-009-GITHUB-PUBLIC-REPO-FIRST-COMMIT-COMPLETE`
+`CLIENTDELIVERYKIT-010-GITHUB-LIVE-SHOWCASE-VERIFICATION-AND-AGENTHUB-PUBLISHED-STATUS-SYNC-COMPLETE`
 
 ## Asset Status
 
@@ -22,6 +22,8 @@ Checkpoint:
 | Release readiness report | Complete | `docs/RELEASE_READINESS_REPORT.md`; conclusion is `ready_for_repo_creation`. |
 | Sample report summary | Complete | Compact public-safe summary in docs. |
 | Full generated report artifacts | Local only | Keep ignored under `outputs/public_reports/*`. |
+| Live GitHub screenshot URLs | Complete | 8/8 public-safe PNG screenshots return HTTP 200. |
+| README preview image URLs | Complete | 3/3 README image references return HTTP 200. |
 | Synthetic sample data | Complete | Fictional demo data only. |
 | Tests | Required before publish | `python -m pytest`. |
 | Compile check | Required before publish | `python -m compileall .`. |
@@ -55,5 +57,6 @@ Checkpoint:
 
 ## Future Publish Readiness
 
-The first public repo commit stage is complete. Next review live GitHub
-rendering, remote tree safety, repo metadata, and portfolio placement.
+The live GitHub showcase verification stage is complete. Maintain the project
+as a published public-safe portfolio spoke and only continue to profile pin
+placement if an explicit later stage requests it.

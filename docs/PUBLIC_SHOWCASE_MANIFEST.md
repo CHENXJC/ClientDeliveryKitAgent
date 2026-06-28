@@ -6,7 +6,7 @@ ClientDeliveryKitAgent
 
 ## Current Status
 
-`CLIENTDELIVERYKIT-009-GITHUB-PUBLIC-REPO-FIRST-COMMIT-COMPLETE`
+`CLIENTDELIVERYKIT-010-GITHUB-LIVE-SHOWCASE-VERIFICATION-AND-AGENTHUB-PUBLISHED-STATUS-SYNC-COMPLETE`
 
 ## Public Showcase Readiness
 
@@ -27,12 +27,14 @@ ClientDeliveryKitAgent
 | Sample report summary | Complete | Compact summary in docs; full generated reports stay out of README |
 | GitHub repository | Created | `https://github.com/CHENXJC/ClientDeliveryKitAgent` |
 | Screenshots | Complete | 8/8 public-safe PNG screenshots under `docs/images/` |
+| Live showcase verification | Complete | Repo, raw README, key docs, README images, and 8/8 screenshots return HTTP 200 |
+| Portfolio placement decision | Complete | `recommend pin`; keep AgentHubControlCenter as the higher-priority hub pin |
 
 ## AgentHub Portfolio Row
 
 | Project | Category | Role in AgentHub | GitHub status | Backlink status | Manifest status | Public-safe status | Next note |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| ClientDeliveryKitAgent | Client delivery / AI automation consulting | Client-facing delivery workflow spoke | Public repo first commit complete | Planned / local README linked | Valid local manifest | Synthetic demo-only | Verify live GitHub showcase |
+| ClientDeliveryKitAgent | Client delivery / AI automation consulting | Client-facing delivery workflow spoke | Published: `https://github.com/CHENXJC/ClientDeliveryKitAgent` | Backlink live | Valid published manifest | Public-safe synthetic demo | Optional profile pin / maintain showcase |
 
 ## Public-Safe Boundary
 
@@ -41,7 +43,7 @@ ClientDeliveryKitAgent
 - No live connector.
 - No external API.
 - No real action execution.
-- GitHub publication is limited to the explicit first public commit stage.
+- GitHub publication is verified as a public-safe live showcase.
 - No force push, real connector, real action execution, or private output
   publication in this stage.
 
@@ -51,3 +53,15 @@ Generated files under `outputs/public_reports/` are public-safe demo artifacts,
 but they remain ignored by default for the future public repository. The public
 showcase should include `docs/SAMPLE_DELIVERY_REPORT_SUMMARY.md` and regenerate
 full demo reports locally when needed.
+
+## Live Showcase Verification
+
+See `docs/LIVE_SHOWCASE_VERIFICATION.md`.
+
+Summary:
+
+- Repository page, raw README, project status, and key docs return HTTP 200.
+- README preview images are 3/3 HTTP 200.
+- Dashboard screenshots are 8/8 HTTP 200 as `image/png`.
+- Remote tree safety passed with unsafe tracked paths = 0.
+- `outputs/public_reports/` tracks only `.gitkeep`.

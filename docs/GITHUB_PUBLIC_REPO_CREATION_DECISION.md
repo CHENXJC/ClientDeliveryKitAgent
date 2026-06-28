@@ -1,11 +1,11 @@
 # GitHub Public Repo Creation Decision
 
 Checkpoint:
-`CLIENTDELIVERYKIT-009-GITHUB-PUBLIC-REPO-FIRST-COMMIT-COMPLETE`
+`CLIENTDELIVERYKIT-010-GITHUB-LIVE-SHOWCASE-VERIFICATION-AND-AGENTHUB-PUBLISHED-STATUS-SYNC-COMPLETE`
 
 ## Decision
 
-Decision: `public_repo_created_first_commit_complete`
+Decision: `live_public_showcase_verified`
 
 ClientDeliveryKitAgent is suitable for a public GitHub repository. It has a
 clear consulting-focused product story, a local Streamlit dashboard, synthetic
@@ -15,7 +15,8 @@ dashboard screenshots.
 
 The previous recommendation was `ready_for_repo_creation`. In
 CLIENTDELIVERYKIT-009, the public repo target was created and the first
-public-safe commit was prepared for `origin/main`.
+public-safe commit was prepared for `origin/main`. In CLIENTDELIVERYKIT-010,
+the live showcase was verified on GitHub.
 
 Repository:
 `https://github.com/CHENXJC/ClientDeliveryKitAgent`
@@ -37,7 +38,8 @@ Repository:
 | `recommend_create_now` | Superseded | No longer needed because screenshots are captured. |
 | `recommend_create_after_screenshots` | Completed | Screenshot capture is now complete. |
 | `ready_for_repo_creation` | Completed | User explicitly approved the first public commit stage. |
-| `public_repo_created_first_commit_complete` | Primary | Current stage result. |
+| `public_repo_created_first_commit_complete` | Completed | First public-safe commit was pushed in CLIENTDELIVERYKIT-009. |
+| `live_public_showcase_verified` | Primary | Current stage result; repo, docs, screenshots, and safety boundary verified live. |
 | `recommend_keep_local` | Not recommended | The project already has enough public-safe structure for a future repo. |
 
 ## Required Conditions Before Public Commit
@@ -84,11 +86,22 @@ and public-safe delivery reports.
 Publish ClientDeliveryKitAgent public showcase MVP
 ```
 
+## Live Showcase Verification
+
+- Repository page and raw README return HTTP 200.
+- Key public docs return HTTP 200.
+- README preview images are 3/3 HTTP 200.
+- Screenshot inventory is 8/8 HTTP 200 as `image/png`.
+- Remote tree safety passed with unsafe tracked paths = 0.
+- Generated full reports remain untracked; `outputs/public_reports/` contains
+  only `.gitkeep` on the remote tree.
+
 ## Next Stage Recommendation
 
-`CLIENTDELIVERYKIT-010-GITHUB-LIVE-SHOWCASE-VERIFICATION-AND-PORTFOLIO-PLACEMENT-REVIEW`
+`CLIENTDELIVERYKIT-011-PROFILE-PIN-OR-MAINTAIN-SHOWCASE-DECISION`
 
 Recommended scope:
 
-- Verify live README rendering, screenshot asset URLs, and remote tree safety.
-- Review repo description/topics and portfolio placement.
+- Decide whether to pin ClientDeliveryKitAgent if a profile slot is available.
+- Keep AgentHubControlCenter as the first-priority hub pin.
+- Avoid feature expansion unless a later explicit stage requests it.

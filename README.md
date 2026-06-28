@@ -17,12 +17,12 @@ http://localhost:8535
 
 ## Current Stage
 
-- Checkpoint: `CLIENTDELIVERYKIT-009-GITHUB-PUBLIC-REPO-FIRST-COMMIT-COMPLETE`
+- Checkpoint: `CLIENTDELIVERYKIT-010-GITHUB-LIVE-SHOWCASE-VERIFICATION-AND-AGENTHUB-PUBLISHED-STATUS-SYNC-COMPLETE`
 - Mode: local demo scoring, public-safe report export, and Streamlit dashboard
 - Data: synthetic demo data only
 - Execution: local dashboard view, object generation, and public-safe local report export only; no real automation actions
 - Connector status: planned only
-- GitHub status: public repo created at `https://github.com/CHENXJC/ClientDeliveryKitAgent`
+- GitHub status: live public showcase verified at `https://github.com/CHENXJC/ClientDeliveryKitAgent`
 
 ## Positioning
 
@@ -140,9 +140,9 @@ Current AgentHub status:
 - Manifest status: valid local manifest
 - Role in AgentHub: client-facing delivery workflow spoke
 - Dashboard URL: `http://localhost:8535`
-- GitHub status: public repo created at `https://github.com/CHENXJC/ClientDeliveryKitAgent`
+- GitHub status: live public showcase verified at `https://github.com/CHENXJC/ClientDeliveryKitAgent`
 - Public-safe status: synthetic demo-only
-- Next note: live GitHub showcase verification and portfolio placement review
+- Next note: AgentHub published-spoke status sync and optional profile pin review
 
 ## Demo Data
 
@@ -209,4 +209,4 @@ ClientDeliveryKitAgent/
 - `CLIENTDELIVERYKIT-007`: GitHub repo creation decision complete
 - `CLIENTDELIVERYKIT-008`: Screenshot capture and showcase asset review complete
 - `CLIENTDELIVERYKIT-009`: GitHub public repo first commit complete
-- `CLIENTDELIVERYKIT-010`: Live showcase verification and portfolio placement review
+- `CLIENTDELIVERYKIT-010`: Live showcase verification and AgentHub published status sync complete
