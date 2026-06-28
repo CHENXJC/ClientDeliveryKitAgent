@@ -1,0 +1,39 @@
+{
+  "data_notice": "demo_only_synthetic_data_no_real_customer_information",
+  "business_context": {
+    "company_label": "Demo Local Services Co.",
+    "business_model": "service appointments, quotes, repeat maintenance, and small project work",
+    "primary_customer_types": [
+      "homeowners",
+      "small property managers",
+      "local commercial tenants"
+    ],
+    "workflow_channels": [
+      "inbound inquiry",
+      "quote request",
+      "appointment scheduling",
+      "job status update",
+      "follow-up reminder"
+    ],
+    "current_operating_pattern": "Most tasks are coordinated through manual notes, shared inbox threads, and spreadsheet updates."
+  },
+  "automation_fit_hypothesis": {
+    "high_fit": [
+      "lead intake classification",
+      "quote readiness checklist",
+      "job status summary",
+      "weekly backlog digest"
+    ],
+    "medium_fit": [
+      "draft follow-up message",
+      "customer FAQ response draft",
+      "internal task assignment suggestion"
+    ],
+    "low_fit_or_blocked": [
+      "automatic customer message send",
+      "automatic price quote approval",
+      "automatic refund or billing decision"
+    ]
+  },
+  "consulting_angle": "A public-safe AI automation consultant workflow should prioritize visibility, triage, and draft generation before any customer-facing automation."
+}

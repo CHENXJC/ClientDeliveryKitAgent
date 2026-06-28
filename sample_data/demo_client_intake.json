@@ -1,0 +1,38 @@
+{
+  "data_notice": "demo_only_synthetic_data_no_real_customer_information",
+  "client_profile": {
+    "company_label": "Demo Local Services Co.",
+    "industry": "local home services",
+    "team_size_band": "11-25",
+    "region_label": "fictional metro area",
+    "contact_role": "operations lead fictional role",
+    "current_stage": "manual operations with basic digital tools"
+  },
+  "intake_summary": {
+    "main_goal": "reduce manual admin work and improve lead follow-up consistency",
+    "current_tools": [
+      "shared inbox",
+      "spreadsheet tracker",
+      "calendar booking link",
+      "manual invoice template"
+    ],
+    "top_constraints": [
+      "small team",
+      "limited technical support",
+      "inconsistent process notes",
+      "need for human review before customer communication"
+    ],
+    "success_definition": [
+      "faster lead triage",
+      "clearer handoff between admin and field teams",
+      "better visibility into pending jobs",
+      "lower missed follow-up rate"
+    ]
+  },
+  "safety_notes": [
+    "synthetic demo only",
+    "no real client records",
+    "no account connection",
+    "manual review required for any future customer-facing action"
+  ]
+}

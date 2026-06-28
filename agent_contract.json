@@ -1,0 +1,156 @@
+{
+  "contract_version": "CLIENTDELIVERYKIT-009",
+  "agent_id": "client_delivery_kit_agent",
+  "project_name": "ClientDeliveryKitAgent",
+  "purpose": "Define a public-safe local demo contract for client delivery schemas, deterministic scoring, report artifacts, Streamlit dashboard, useful signals, recommended actions, future AgentHubControlCenter integration, GitHub public repo metadata, and public showcase screenshots.",
+  "execution_policy": {
+    "current_stage_execution": "local_demo_dashboard_and_report_export_only",
+    "real_workflow_execution": false,
+    "external_connectors": "not_connected",
+    "customer_data_processing": false,
+    "command_templates": "display_text_only",
+    "requires_approval_for_real_send_write_or_customer_data": true
+  },
+  "allowed_inputs": [
+    "synthetic_client_intake_json",
+    "synthetic_business_context_json",
+    "synthetic_workflow_pain_points_json"
+  ],
+  "disallowed_inputs": [
+    "real_customer_records",
+    "private_exports",
+    "local_account_material",
+    "production_databases",
+    "private_reports"
+  ],
+  "planned_outputs": [
+    "discovery_summary",
+    "workflow_pain_point_diagnosis",
+    "client_pain_point_map",
+    "automation_opportunity_scorecard",
+    "useful_signals",
+    "recommended_actions",
+    "recommended_workflow_improvements",
+    "risk_and_approval_notes",
+    "suggested_next_steps",
+    "public_safe_demo_summary_object",
+    "public_safe_markdown_report",
+    "public_safe_json_report",
+    "public_safe_csv_scorecard",
+    "streamlit_consultant_dashboard",
+    "public_safe_delivery_report_template"
+  ],
+  "workflow_stages": [
+    "client_intake",
+    "business_context_extraction",
+    "pain_point_diagnosis",
+    "workflow_bottleneck_mapping",
+    "automation_opportunity_scoring",
+    "useful_signals",
+    "recommended_actions",
+    "delivery_report_or_proposal_summary",
+    "agenthub_control_center_integration"
+  ],
+  "planned_modules": [
+    "client_intake",
+    "business_context",
+    "pain_point_diagnosis",
+    "workflow_mapping",
+    "automation_opportunity_scoring",
+    "useful_signals",
+    "recommendation_engine",
+    "delivery_report_builder",
+    "agenthub_export",
+    "connector_readiness"
+  ],
+  "action_schema": {
+    "required_fields": [
+      "action_id",
+      "label",
+      "description",
+      "action_type",
+      "execution_mode",
+      "risk_level",
+      "requires_approval",
+      "command_template",
+      "runbook_ref",
+      "expected_output",
+      "safety_note",
+      "connector_required",
+      "status"
+    ],
+    "action_type_enum": [
+      "display_only",
+      "manual_instruction",
+      "command_template",
+      "local_link",
+      "report_view",
+      "codex_prompt",
+      "future_connector"
+    ],
+    "execution_mode_enum": [
+      "not_executable",
+      "manual_only",
+      "template_only",
+      "planned"
+    ],
+    "risk_level_enum": [
+      "low",
+      "medium",
+      "high",
+      "blocked"
+    ]
+  },
+  "connector_policy": {
+    "current_connectors": "planned_or_not_connected_only",
+    "real_account_connections_allowed": false,
+    "connector_readiness_review_required": true,
+    "approval_gate_required": true,
+    "blocked_until_future_stage": [
+      "real_email_send",
+      "real_document_write",
+      "real_sheet_write",
+      "real_customer_workspace_update",
+      "external_script_execution"
+    ]
+  },
+  "agenthub_integration_contract": {
+    "manifest_scan_ready": true,
+    "useful_signals_export": "implemented_demo_object",
+    "action_center_export": "recommended_action_objects",
+    "report_export": "implemented_public_safe_artifacts",
+    "dashboard_url": "http://localhost:8535",
+    "codex_prompt_generator": "planned",
+    "manual_runbook": "docs/AGENTHUB_INTEGRATION_PLAN.md"
+  },
+  "validation_requirements": [
+    "python -m json.tool agent_manifest.json",
+    "python -m json.tool agent_contract.json",
+    "python -m json.tool sample_data/demo_client_intake.json",
+    "python -m json.tool sample_data/demo_business_context.json",
+    "python -m json.tool sample_data/demo_workflow_pain_points.json",
+    "python -m pytest",
+    "python -m compileall .",
+    "report_builder_public_safe_disclaimer_check",
+    "report_exporter_public_reports_only_check",
+    "report_pipeline_markdown_json_csv_check",
+    "streamlit_smoke_check_http_200",
+    "dashboard_sections_visible_check",
+    "public_safe_scan_new_project_files",
+    "readme_positioning_check",
+    "agenthub_integration_docs_check",
+    "public_release_checklist_review",
+    "github_repo_prep_decision_review",
+    "showcase_asset_checklist_review",
+    "github_public_repo_creation_decision_review",
+    "first_public_commit_manifest_review",
+    "public_exclusion_manifest_review",
+    "release_readiness_report_review",
+    "screenshot_inventory_review",
+    "readme_image_reference_check",
+    "first_public_commit_staged_file_check",
+    "github_public_repo_push_verification"
+  ],
+  "current_checkpoint": "CLIENTDELIVERYKIT-009-GITHUB-PUBLIC-REPO-FIRST-COMMIT-COMPLETE",
+  "next_recommended_action": "CLIENTDELIVERYKIT-010-GITHUB-LIVE-SHOWCASE-VERIFICATION-AND-PORTFOLIO-PLACEMENT-REVIEW"
+}

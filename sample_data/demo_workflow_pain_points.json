@@ -1,0 +1,54 @@
+{
+  "data_notice": "demo_only_synthetic_data_no_real_customer_information",
+  "company_label": "Demo Local Services Co.",
+  "pain_points": [
+    {
+      "pain_point_id": "pp_001",
+      "title": "Lead details are scattered across inbox threads and spreadsheets",
+      "workflow_area": "lead intake",
+      "severity": "high",
+      "frequency": "daily",
+      "business_impact": "slower response time and missed context during handoff",
+      "automation_opportunity": "summarize each new inquiry into a structured intake record",
+      "approval_note": "human review required before any customer response"
+    },
+    {
+      "pain_point_id": "pp_002",
+      "title": "Quote readiness is inconsistent across team members",
+      "workflow_area": "quote preparation",
+      "severity": "medium",
+      "frequency": "weekly",
+      "business_impact": "extra back-and-forth before a quote can be prepared",
+      "automation_opportunity": "generate a missing-information checklist from demo intake fields",
+      "approval_note": "manual review required before sending quote requests"
+    },
+    {
+      "pain_point_id": "pp_003",
+      "title": "Managers lack a simple weekly backlog view",
+      "workflow_area": "operations visibility",
+      "severity": "medium",
+      "frequency": "weekly",
+      "business_impact": "harder to prioritize pending jobs and follow-ups",
+      "automation_opportunity": "produce a weekly backlog digest from structured demo records",
+      "approval_note": "internal report only during MVP"
+    },
+    {
+      "pain_point_id": "pp_004",
+      "title": "Follow-up timing depends on manual memory",
+      "workflow_area": "customer follow-up",
+      "severity": "high",
+      "frequency": "daily",
+      "business_impact": "missed revenue opportunities and uneven customer experience",
+      "automation_opportunity": "draft follow-up reminders for manual review",
+      "approval_note": "automatic sending remains blocked"
+    }
+  ],
+  "scoring_dimensions_planned": [
+    "impact",
+    "repeatability",
+    "data_availability",
+    "implementation_effort",
+    "risk",
+    "human_review_need"
+  ]
+}

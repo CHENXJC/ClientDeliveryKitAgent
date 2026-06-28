@@ -1,0 +1,2 @@
+# Core logic and report export use the Python standard library.
+streamlit>=1.36
