@@ -17,12 +17,13 @@ http://localhost:8535
 
 ## Current Stage
 
-- Checkpoint: `CLIENTDELIVERYKIT-010-GITHUB-LIVE-SHOWCASE-VERIFICATION-AND-AGENTHUB-PUBLISHED-STATUS-SYNC-COMPLETE`
+- Checkpoint: `CLIENTDELIVERYKIT-011-PROFILE-PIN-OR-MAINTAIN-SHOWCASE-DECISION-COMPLETE`
 - Mode: local demo scoring, public-safe report export, and Streamlit dashboard
 - Data: synthetic demo data only
 - Execution: local dashboard view, object generation, and public-safe local report export only; no real automation actions
 - Connector status: planned only
 - GitHub status: live public showcase verified at `https://github.com/CHENXJC/ClientDeliveryKitAgent`
+- Portfolio status: `recommend pin` if a GitHub profile slot is available; otherwise maintain showcase as an AgentHub spoke
 
 ## Positioning
 
@@ -142,7 +143,7 @@ Current AgentHub status:
 - Dashboard URL: `http://localhost:8535`
 - GitHub status: live public showcase verified at `https://github.com/CHENXJC/ClientDeliveryKitAgent`
 - Public-safe status: synthetic demo-only
-- Next note: AgentHub published-spoke status sync and optional profile pin review
+- Next note: maintain showcase; manual profile pin is optional if a slot is available
 
 ## Demo Data
 
@@ -210,3 +211,4 @@ ClientDeliveryKitAgent/
 - `CLIENTDELIVERYKIT-008`: Screenshot capture and showcase asset review complete
 - `CLIENTDELIVERYKIT-009`: GitHub public repo first commit complete
 - `CLIENTDELIVERYKIT-010`: Live showcase verification and AgentHub published status sync complete
+- `CLIENTDELIVERYKIT-011`: Profile pin and maintain-showcase decision complete

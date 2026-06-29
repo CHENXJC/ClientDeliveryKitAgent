@@ -1,7 +1,7 @@
 # Portfolio Placement Decision
 
 Checkpoint:
-`CLIENTDELIVERYKIT-010-GITHUB-LIVE-SHOWCASE-VERIFICATION-AND-AGENTHUB-PUBLISHED-STATUS-SYNC-COMPLETE`
+`CLIENTDELIVERYKIT-011-PROFILE-PIN-OR-MAINTAIN-SHOWCASE-DECISION-COMPLETE`
 
 ## Pin Decision
 
@@ -11,6 +11,9 @@ ClientDeliveryKitAgent is worth pinning if a GitHub profile slot is available.
 It should sit behind AgentHubControlCenter in priority, because AgentHub is the
 portfolio hub, while ClientDeliveryKitAgent is the strongest client-facing
 delivery spoke.
+
+This is a manual placement decision only. No GitHub profile pin was changed in
+this stage.
 
 ## Why It Fits The Portfolio
 
@@ -33,12 +36,29 @@ delivery spoke.
 | Portfolio page or resume project list | Include ClientDeliveryKitAgent as the consulting delivery workflow project. |
 | Future feature expansion | Pause unless a later explicit stage asks for profile pin polish or connector planning. |
 
+## Recommended Pinned Order
+
+1. AgentHubControlCenter
+2. ClientDeliveryKitAgent
+3. BusinessOpsAgent
+4. SocialPainFinderAgent
+5. QuantLabAgent
+6. NewsSignalAgent or CareerPilotAgent
+
 ## One-Line Positioning
 
 ClientDeliveryKitAgent is a local-first AI automation consulting delivery kit
 that turns synthetic client intake into workflow pain diagnosis, opportunity
 scorecards, useful signals, recommended actions, and public-safe delivery
 reports.
+
+## Maintain-Showcase Decision
+
+Decision: `enter maintain-showcase`
+
+The project has reached a strong public showcase state. Future work should be
+limited to bugfixes, docs refresh, screenshot refresh, manual pin follow-up, or
+a separately approved V2 / connector planning stage.
 
 ## Safety Boundary
 

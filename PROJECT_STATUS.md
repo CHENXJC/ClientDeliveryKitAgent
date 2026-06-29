@@ -2,12 +2,13 @@
 
 ## Current Checkpoint
 
-`CLIENTDELIVERYKIT-010-GITHUB-LIVE-SHOWCASE-VERIFICATION-AND-AGENTHUB-PUBLISHED-STATUS-SYNC-COMPLETE`
+`CLIENTDELIVERYKIT-011-PROFILE-PIN-OR-MAINTAIN-SHOWCASE-DECISION-COMPLETE`
 
 ## Stage Summary
 
-ClientDeliveryKitAgent now has a verified public GitHub showcase, a live
-public-safe screenshot surface, and an AgentHub published-spoke sync target.
+ClientDeliveryKitAgent now has a verified public GitHub showcase, an AgentHub
+published-spoke sync, a profile pin recommendation, and a maintain-showcase
+decision.
 
 GitHub repository:
 `https://github.com/CHENXJC/ClientDeliveryKitAgent`
@@ -15,6 +16,22 @@ GitHub repository:
 The live repository remains synthetic demo-only. Generated full reports,
 private outputs, credentials, real client data, and real connectors are still
 excluded from the public showcase boundary.
+
+## Completed In CLIENTDELIVERYKIT-011
+
+- Reviewed ClientDeliveryKitAgent for GitHub Profile pin fit.
+- Recorded pin decision: `recommend pin`.
+- Confirmed AgentHubControlCenter remains the first-priority hub pin and
+  ClientDeliveryKitAgent is the client-facing delivery workflow spoke.
+- Added a manual GitHub Profile pin guide; no profile pin was changed
+  automatically.
+- Added portfolio positioning copy for README/About/resume/LinkedIn/interview
+  use.
+- Reviewed repo About/topics and confirmed current topics are suitable.
+- Confirmed README first screen is clear enough; only lightweight checkpoint
+  and portfolio-status wording was updated.
+- Added maintain-showcase plan and decided to pause feature expansion.
+- Updated manifest and contract metadata for the completed 011 decision stage.
 
 ## Completed In CLIENTDELIVERYKIT-010
 
@@ -129,6 +146,10 @@ excluded from the public showcase boundary.
 - Release readiness report
 - Public-safe dashboard screenshots
 - README screenshot preview
+- Profile pin decision
+- Portfolio positioning docs
+- Maintain-showcase plan
+- Manual GitHub profile pin guide
 
 ## AgentHub Import Result
 
@@ -140,6 +161,8 @@ excluded from the public showcase boundary.
 | Dashboard URL | `http://localhost:8535` |
 | GitHub status | Public live showcase verified |
 | Public-safe status | Synthetic demo-only |
+| Pin decision | `recommend pin` |
+| Maintain-showcase decision | Enter maintain-showcase; pause feature expansion |
 
 ## Public Showcase Prep Result
 
@@ -170,6 +193,19 @@ excluded from the public showcase boundary.
 | AgentHub backlink wording | Present in README |
 | Repo topics | Present and portfolio-relevant |
 
+## Profile Pin / Maintain-Showcase Result
+
+| Check | Result |
+| --- | --- |
+| Pin decision | `recommend pin` |
+| First-priority pin | AgentHubControlCenter |
+| Second-priority pin | ClientDeliveryKitAgent if a slot is available |
+| Repo About suggestions | Added in `docs/PORTFOLIO_POSITIONING.md` and `docs/GITHUB_PROFILE_PIN_GUIDE.md` |
+| Topics review | Current topics suitable; optional future additions documented |
+| README first-screen check | Passed; first screen clearly states positioning, safety, checkpoint, and live GitHub status |
+| Maintain-showcase decision | Enter maintain-showcase |
+| Feature expansion | Paused unless a future explicit V2 / connector / bugfix stage is requested |
+
 ## Safety Status
 
 - `.env` was not read.
@@ -185,6 +221,8 @@ excluded from the public showcase boundary.
   CLIENTDELIVERYKIT-009 stage.
 - CLIENTDELIVERYKIT-010 remains docs/status verification only until its own
   explicit docs commit.
+- CLIENTDELIVERYKIT-011 is decision/docs/metadata only; no profile pin, live
+  connector, real client workflow, or real action was executed.
 - No force push was performed.
 - No file was written to `outputs/private/`.
 - Generated full reports under `outputs/public_reports/` were not staged.
@@ -208,15 +246,21 @@ Validation completed for this checkpoint:
 | First public commit boundary | Passed; staged file set excludes generated reports, private outputs, caches, and credentials |
 | Live GitHub showcase verification | Passed; repo, raw README, key docs, README images, and 8/8 screenshots are HTTP 200 |
 | Remote tree safety | Passed; unsafe tracked paths = 0 and `outputs/public_reports/` contains only `.gitkeep` |
+| CLIENTDELIVERYKIT-011 JSON validation | Passed; `agent_manifest.json` and `agent_contract.json` load |
+| CLIENTDELIVERYKIT-011 `python -m pytest` | Passed; 35 tests |
+| CLIENTDELIVERYKIT-011 `python -m compileall .` | Passed |
+| CLIENTDELIVERYKIT-011 README image reference check | Passed; 3/3 local image refs exist |
+| CLIENTDELIVERYKIT-011 public-safe scan | Passed; secret-value hits = 0 |
+| CLIENTDELIVERYKIT-011 git status check | Passed; docs/metadata-only modifications before commit |
 
 ## Next Recommended Stage
 
-`CLIENTDELIVERYKIT-011-PROFILE-PIN-OR-MAINTAIN-SHOWCASE-DECISION`
+`CLIENTDELIVERYKIT-012-MAINTAIN-SHOWCASE-PERIODIC-REFRESH-ONLY-IF-NEEDED`
 
 Recommended scope:
 
-- If profile pin slots are available, consider pinning ClientDeliveryKitAgent as
-  the client-facing consulting delivery spoke.
-- If pin slots are limited, keep AgentHubControlCenter as the primary hub pin
-  and maintain ClientDeliveryKitAgent as a linked public spoke.
-- Do not expand features until the showcase placement decision is settled.
+- Default to no active feature work.
+- Only resume for bugfixes, docs refresh, screenshot refresh, or explicit
+  manual profile pin follow-up.
+- Start a separate V2 planning stage only if real client scenarios or an
+  AgentHub connector pilot justify it.

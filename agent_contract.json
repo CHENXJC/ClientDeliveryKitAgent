@@ -1,5 +1,5 @@
 {
-  "contract_version": "CLIENTDELIVERYKIT-010",
+  "contract_version": "CLIENTDELIVERYKIT-011",
   "agent_id": "client_delivery_kit_agent",
   "project_name": "ClientDeliveryKitAgent",
   "purpose": "Define a public-safe local demo contract for client delivery schemas, deterministic scoring, report artifacts, Streamlit dashboard, useful signals, recommended actions, future AgentHubControlCenter integration, GitHub public repo metadata, and public showcase screenshots.",
@@ -152,8 +152,10 @@
     "github_public_repo_push_verification",
     "live_github_showcase_verification",
     "remote_tree_safety_verification",
-    "agenthub_published_spoke_sync_check"
+    "agenthub_published_spoke_sync_check",
+    "profile_pin_decision_review",
+    "maintain_showcase_plan_review"
   ],
-  "current_checkpoint": "CLIENTDELIVERYKIT-010-GITHUB-LIVE-SHOWCASE-VERIFICATION-AND-AGENTHUB-PUBLISHED-STATUS-SYNC-COMPLETE",
-  "next_recommended_action": "CLIENTDELIVERYKIT-011-PROFILE-PIN-OR-MAINTAIN-SHOWCASE-DECISION"
+  "current_checkpoint": "CLIENTDELIVERYKIT-011-PROFILE-PIN-OR-MAINTAIN-SHOWCASE-DECISION-COMPLETE",
+  "next_recommended_action": "CLIENTDELIVERYKIT-012-MAINTAIN-SHOWCASE-PERIODIC-REFRESH-ONLY-IF-NEEDED"
 }

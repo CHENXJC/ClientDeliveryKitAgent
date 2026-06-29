@@ -6,7 +6,7 @@ ClientDeliveryKitAgent
 
 ## Current Status
 
-`CLIENTDELIVERYKIT-010-GITHUB-LIVE-SHOWCASE-VERIFICATION-AND-AGENTHUB-PUBLISHED-STATUS-SYNC-COMPLETE`
+`CLIENTDELIVERYKIT-011-PROFILE-PIN-OR-MAINTAIN-SHOWCASE-DECISION-COMPLETE`
 
 ## Public Showcase Readiness
 
@@ -29,12 +29,13 @@ ClientDeliveryKitAgent
 | Screenshots | Complete | 8/8 public-safe PNG screenshots under `docs/images/` |
 | Live showcase verification | Complete | Repo, raw README, key docs, README images, and 8/8 screenshots return HTTP 200 |
 | Portfolio placement decision | Complete | `recommend pin`; keep AgentHubControlCenter as the higher-priority hub pin |
+| Maintain-showcase decision | Complete | Enter maintain-showcase; no feature expansion by default |
 
 ## AgentHub Portfolio Row
 
 | Project | Category | Role in AgentHub | GitHub status | Backlink status | Manifest status | Public-safe status | Next note |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| ClientDeliveryKitAgent | Client delivery / AI automation consulting | Client-facing delivery workflow spoke | Published: `https://github.com/CHENXJC/ClientDeliveryKitAgent` | Backlink live | Valid published manifest | Public-safe synthetic demo | Optional profile pin / maintain showcase |
+| ClientDeliveryKitAgent | Client delivery / AI automation consulting | Client-facing delivery workflow spoke | Published: `https://github.com/CHENXJC/ClientDeliveryKitAgent` | Backlink live | Valid published manifest | Public-safe synthetic demo | Recommend pin if slot available / maintain showcase |
 
 ## Public-Safe Boundary
 
@@ -65,3 +66,20 @@ Summary:
 - Dashboard screenshots are 8/8 HTTP 200 as `image/png`.
 - Remote tree safety passed with unsafe tracked paths = 0.
 - `outputs/public_reports/` tracks only `.gitkeep`.
+
+## Profile Pin And Maintain-Showcase Decision
+
+See:
+
+- `docs/PROFILE_PIN_DECISION.md`
+- `docs/GITHUB_PROFILE_PIN_GUIDE.md`
+- `docs/PORTFOLIO_POSITIONING.md`
+- `docs/MAINTAIN_SHOWCASE_PLAN.md`
+
+Summary:
+
+- Pin decision: `recommend pin`.
+- Pinned order: AgentHubControlCenter first, ClientDeliveryKitAgent second if a
+  slot is available.
+- Maintain decision: enter maintain-showcase and pause feature expansion.
+- No profile pin was changed automatically.
